@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple OYO-like Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.black
+{
+    width:100vw;
+    height:250px;
+    border:none;
+    background: linear-gradient(to bottom right, orange, purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.black p
+{
+    font-size: 40px;
+    font-style:italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #f18383;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.cloun{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.accommodations h2 {
+    margin-bottom: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 80vw;
+    height: 400px;
+    border-radius: 5px;
+}
+
+.card button {
+    padding: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.black h1{
+    height: 80px;
+    width:700px;
+    background-color: aliceblue;
+    color:black
+    
+}
+.b1
+{
+    height: 40px;
+    width: 200px;
+    border:none;
+    border-radius: 20px;
+    
+}
+.b1 button
+
+{
+
+    height: 35px;
+    width: 180px;
+    border:none;
+    border-radius: 20px;
+    background-color: green;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">OYO Clone</div>
+        <nav>
+            <ul>
+           
+                <li><a href="./project.html">About</a></li>
+                <li><a href="https://www.oyorooms.com/about/">Main office</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-bar">
+            <input type="text" placeholder="Search for hotels or locations...">
+            
+            <button>Search</button>
+        </section>
+        <div class="black">
+            <p>Over  174,000+ hotels and homes across 35+ countries</p>
+            
+                <div class="b1"><button>Search For Hotel</button></div>
+                
+            
+        </div>
+
+        <section class="cloun">
+            <h2>Featured Accommodations</h2>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/R.c605d107b4f470485414162d3cebb80a?rik=T5yh8QgqZ7WFmg&riu=http%3a%2f%2fwww.edunia.com%2fwp-content%2fuploads%2f2020%2f03%2fFeature-oyo-1-1.jpg&ehk=JJCBufGOI78dlMbAoSv0L8cC5UivJtos13UglyIZoSA%3d&risl=&pid=ImgRaw&r=0" alt="Hotel 1">
+                <h3>primum room</h3>
+                <p>location:pune</p>
+                <p>Price: 8500/night</p>
+                <button>Book Now</button>
+            </div>
+            <div class="card">
+                <img src="https://assets.theedgemarkets.com/OYO-Hotel_TEM1326_20200708102408_theedgemarkets.jpg?null" alt="Hotel 2">
+                <h3>Hotel Diamond </h3>
+                <p>Location: Belgum</p>
+                <p>Price: 6000/night</p>
+                <button>Book Now</button>
+            </div>
+            <div class="card">
+                <img src="https://udaipurkiran.com/wp-content/uploads/2019/12/Oyo-Townhouse.jpg" alt="Hotel 3">
+                <h3>Hotel Oyo-Townhouse</h3>
+                <p>Location: Bengaluru</p>
+                <p>Price:10000/night</p>
+                <button>Book Now</button>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer>
+        <p>&copy; 2023 OYO Clone. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
